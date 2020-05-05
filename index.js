@@ -8,8 +8,8 @@ module.exports = {
   spacing: spacingUnit,
   breakpoints: { values: breakpoints },
   palette: {
-    primary: { main: colors.red_500, light: colors.red_500 },
-    secondary: { main: colors.grey_V900 },
+    primary: { main: colors.grey_V900, light: colors.red_500 },
+    secondary: { main: colors.red_500 },
     error: { main: colors.yellow_500 },
     text: {
       primary: colors.off_black,
