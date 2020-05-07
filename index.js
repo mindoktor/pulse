@@ -1,6 +1,6 @@
-const colors = require('./lib/colors');
-const typography = require('./lib/typography');
-const { breakpoints, mq } = require('./lib/breakpoints');
+const colors = require("./lib/colors");
+const typography = require("./lib/typography");
+const { breakpoints, mq } = require("./lib/breakpoints");
 
 const spacingUnit = 8;
 
@@ -10,7 +10,7 @@ module.exports = {
   palette: {
     primary: { main: colors.grey_V900, light: colors.red_500 },
     secondary: { main: colors.red_500 },
-    error: { main: colors.yellow_500 },
+    error: { main: colors.red_alt },
     text: {
       primary: colors.off_black,
       secondary: colors.grey_700,
@@ -31,21 +31,21 @@ module.exports = {
     caption: typography.body2,
     button: {
       ...typography.button,
-      textTransform: 'inherit',
+      textTransform: "inherit",
     },
     overline: typography.body2,
   },
   overrides: {
     MuiBackdrop: {
       root: {
-        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        backgroundColor: "rgba(0, 0, 0, 0.4)",
       },
     },
     MuiDialog: {
       paper: {
         marginLeft: 24,
         marginRight: 24,
-        boxShadow: '0 2px 60px rgba(0, 0, 0, 0.4)',
+        boxShadow: "0 2px 60px rgba(0, 0, 0, 0.4)",
         borderRadius: 8,
       },
       paperFullWidth: {
@@ -55,34 +55,34 @@ module.exports = {
     MuiDialogTitle: {
       root: {
         padding: `0 32px`,
-        '&:first-child': { paddingTop: 32 },
-        '&:last-child': { paddingBottom: 32 },
+        "&:first-child": { paddingTop: 32 },
+        "&:last-child": { paddingBottom: 32 },
       },
     },
     MuiDialogContent: {
       root: {
         padding: `16px 32px 0`,
-        '&:first-child': { paddingTop: 32 },
-        '&:last-child': { paddingBottom: 32 },
+        "&:first-child": { paddingTop: 32 },
+        "&:last-child": { paddingBottom: 32 },
       },
     },
     MuiDialogActions: {
       root: {
         padding: `24px 32px 0 32px`,
-        '&:first-child': { paddingTop: 32 },
-        '&:last-child': { paddingBottom: 32 },
-        display: 'flex',
-        flexDirection: 'column',
+        "&:first-child": { paddingTop: 32 },
+        "&:last-child": { paddingBottom: 32 },
+        display: "flex",
+        flexDirection: "column",
         [mq.xs]: {
-          flexDirection: 'row',
+          flexDirection: "row",
         },
       },
       spacing: {
-        '& > *': {
-          width: '100%',
+        "& > *": {
+          width: "100%",
           flex: 1,
         },
-        '& > * + *': {
+        "& > * + *": {
           marginTop: 16,
           marginLeft: 0,
           [mq.xs]: {
@@ -95,10 +95,10 @@ module.exports = {
     MuiButton: {
       root: {
         borderRadius: 99,
-        boxShadow: 'none',
+        boxShadow: "none",
         minHeight: 40,
         [mq.isHoverable]: {
-          '&:hover': {
+          "&:hover": {
             backgroundColor: colors.grey_100,
           },
         },
@@ -107,19 +107,19 @@ module.exports = {
         minHeight: 50,
       },
       label: {
-        textTransform: 'none',
+        textTransform: "none",
       },
       outlined: {
         border: `1px solid ${colors.grey_500}`,
-        padding: '8px 16px',
-        backgroundColor: 'white',
+        padding: "8px 16px",
+        backgroundColor: "white",
       },
       outlinedSecondary: {
         borderColor: colors.red_500,
       },
       contained: {
         // no shadow for default buttons
-        boxShadow: 'none',
+        boxShadow: "none",
       },
       containedSecondary: {
         backgroundColor: colors.red_500,
@@ -129,7 +129,7 @@ module.exports = {
       root: {
         height: 56,
         width: 56,
-        boxShadow: 'none',
+        boxShadow: "none",
       },
       sizeSmall: {
         height: 40,
@@ -150,7 +150,7 @@ module.exports = {
     MuiFilledInput: {
       root: {
         backgroundColor: colors.grey_100,
-        '&.Mui-focused': {
+        "&.Mui-focused": {
           backgroundColor: colors.grey_100,
         },
       },

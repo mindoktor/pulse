@@ -1,6 +1,6 @@
 {
   "name": "@docly/pulse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Theme config files for Material UI",
   "main": "index.js",
   "author": "Docly <developers@docly.com>",
