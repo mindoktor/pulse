@@ -114,7 +114,7 @@ module.exports = {
         padding: '8px 16px',
         backgroundColor: 'white',
       },
-      outlinedPrimary: {
+      outlinedSecondary: {
         borderColor: colors.red_500,
       },
       contained: {
@@ -122,7 +122,7 @@ module.exports = {
         boxShadow: 'none',
       },
       containedSecondary: {
-        backgroundColor: colors.grey_900,
+        backgroundColor: colors.red_500,
       },
     },
     MuiFab: {
